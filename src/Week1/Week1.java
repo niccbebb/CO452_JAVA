@@ -23,6 +23,8 @@ public class Week1
         int id = InputReader.getInt("Entre your ID: ");
         System.out.println("Your ID is: " + id);
 
-        int mark;
+        double mark = InputReader.getDouble("Enter your mark ");
+        System.out.println("your mark is " + mark);
+
     } 
 }
