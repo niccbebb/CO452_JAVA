@@ -26,10 +26,10 @@ public class Week1
         double mark = InputReader.getDouble("Enter your mark ");
         System.out.println("your mark is " + mark);
 
+        ///This shows how Java works out the perimeter and area of a triangle.
         int length = InputReader.getInt("Enter the length: ");
         int height = InputReader.getInt("Enter the height: ");
 
-        ///This shows how Java works out the perimeter and area of a triangle.
         int area = length * height;
         int perimeter = (length + height) *2;
 
