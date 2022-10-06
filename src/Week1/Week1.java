@@ -26,7 +26,7 @@ public class Week1
         double mark = InputReader.getDouble("Enter your mark ");
         System.out.println("your mark is " + mark);
 
-        ///This shows how Java works out the perimeter and area of a triangle.
+        //This shows how Java works out the perimeter and area of a triangle.
         int length = InputReader.getInt("Enter the length: ");
         int height = InputReader.getInt("Enter the height: ");
 
@@ -36,5 +36,17 @@ public class Week1
         System.out.println("The area is " + area);
         System.out.println("The perimeter is " + perimeter);
 
+        //This is how Java works out the Average.
+        double total = 0;
+        int count = 0;
+        while( count < 3)
+        {
+            total = total + InputReader.getDouble("Enter number : ");
+            count++;
+        }
+
+        double average = total / (count+1);
+
+        System.out.println("The average is " + average);
     } 
 }
