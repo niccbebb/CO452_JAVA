@@ -25,12 +25,23 @@ public class Week02
         
         if (age >= 18)
         {
-            System.out.println("You are 18 or over");
+            System.out.println("You are 18 or over. ");
         } 
         else
         {
-            System.out.println("You're under the age of 18");
+            System.out.println("You're under the age of 18. ");
         }
 
+        String grade = InputReader.getString("Enter your mark: ");
+
+        switch(grade)
+        {
+        case "A" : System.out.println("This is a 1st"); break; 
+        case "B" : System.out.println("This is a 2:1"); break; 
+        case "C" : System.out.println("This is a 2:2"); break;
+        case "D" : System.out.println("This is a pass"); break; 
+        case "F" : System.out.println("This is a failed attempt"); break;
+        default : System.out.println("This is an invalid mark");
+        }
     }     
 }
