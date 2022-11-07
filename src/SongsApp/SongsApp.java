@@ -46,14 +46,40 @@ public class SongsApp
         tunes.add(music4);
 
         tunes.add(music5);
+        
+        System.out.println("Menue:");
+        System.out.println("1 = Print list of song");
+        System.out.println("2 = Add a new song");
+        System.out.println("3 = Remove a song");
+        System.out.println("4 = Print a list of songs over a given number of plays");
+        int name = InputReader.getInt("Choose an option from the menue:");
 
-        String name = InputReader.getString("Enter yo");
-
-        for(Songs obj : tunes)
+        if(name == 1)
         {
-            System.out.println(" ");
-            obj.print();
+            for(Songs obj : tunes)
+            {
+                System.out.println(" ");
+                obj.print();
+            }
         }
+        else if(name == 2)
+        {
+            String inputTiltle = InputReader.getString("Please enter the title of the song: ");
+            String inputArtist = InputReader.getString("Please enter the Artist name: ");
+            int inputPlays = InputReader.getInt("Please enter the number of plays: ");
+
+            Songs inputSong = new Songs();
+            inputSong.Songs(inputTiltle, inputArtist, inputPlays);
+
+            tunes.add(inputSong);
+
+            for(Songs obj : tunes)
+            {
+                System.out.println(" ");
+                obj.print();
+            }
+        }
+
 
         /*
         tunes.add(music6);
@@ -77,13 +103,6 @@ public class SongsApp
         music.addSong ("Vagas", "Doja Cat", "2,343,986");
         
         System.out.println(music);
-
-        System.out.println("Welcome to SongsApp! Please choose an option from the menue ");
-        System.out.println("Menue:");
-        System.out.println("1 = Print list of song");
-        System.out.println("2 = Add a new song");
-        System.out.println("3 = Remove a song");
-        System.out.println("4 = Print a list of songs over a given number of plays");
         */
     } 
 

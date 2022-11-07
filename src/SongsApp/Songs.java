@@ -15,8 +15,8 @@ public class Songs
 
     public void print()
     {
-        System.out.println(this.title);
-        System.out.println(this.artist);
-        System.out.println(this.plays);
+        System.out.println("Title: " + this.title);
+        System.out.println("Artist: " + this.artist);
+        System.out.println("Plays: " + this.plays);
     }
 }

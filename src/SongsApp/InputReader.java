@@ -1,5 +1,4 @@
-package helpers;
-
+package SongsApp;
 import java.util.Scanner;
 import java.io.*;
 
