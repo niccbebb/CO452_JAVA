@@ -1,6 +1,6 @@
-package Week5;
+package SongsApp;
 
-public class Week05 
+public class SongsApp 
 {
     public static final String CONSOLE_CLEAR = "\033[H\033[2J";
     public static void main(String[] args)
@@ -16,5 +16,6 @@ public class Week05
         System.out.println(" by Nicholas Day and Derek Peacock");
         System.out.println();
     }     
+    
     
 }
