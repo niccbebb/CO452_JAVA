@@ -17,23 +17,37 @@ public class SongsApp
         System.out.println(" by Nicholas Day and Derek Peacock");
         System.out.println();
 
+        /*This is my list of songs, artists and, number of plays. */
+
         Songs music0 = new Songs();
-        music0.Songs("title1",  "artist1", 6);
+        music0.Songs("Vagas",  "Doja Cat", 6656758);
 
         Songs music1 = new Songs();
-        music1.Songs("title2",  "artist2", 20);
+        music1.Songs("Moscow Mule",  "Bad Bunny", 2000000);
 
         Songs music2 = new Songs();
         music2.Songs("Wow",  "Tion Wayne", 60000000);
 
         Songs music3 = new Songs();
-        music3.Songs("title3",  "artist3", 100);
+        music3.Songs("La Nota",  "Manuel Turizo", 100);
 
         Songs music4 = new Songs();
-        music4.Songs("title4",  "artist4", 2000);
+        music4.Songs("Retail Thearpy",  "Central Cee", 200560);
 
         Songs music5 = new Songs();
-        music5.Songs("title5",  "artist5", 600);
+        music5.Songs("War",  "ArrDee", 600);
+
+        Songs music6 = new Songs();
+        music6.Songs("System",  "Dave", 67464800);
+
+        Songs music7 = new Songs();
+        music7.Songs("Sidelines",  "Lecrae", 7476400);
+
+        Songs music8 = new Songs();
+        music8.Songs("TDU",  "Kioda", 999800);
+
+        Songs music9 = new Songs();
+        music9.Songs("Floss",  "AJ Tracey", 1256800);
         
         ArrayList<Songs> tunes = new ArrayList<>();
 
@@ -41,12 +55,24 @@ public class SongsApp
 
         tunes.add(music1);
 
+        tunes.add(music2);
+
         tunes.add(music3);
 
         tunes.add(music4);
 
         tunes.add(music5);
+
+        tunes.add(music6);
+
+        tunes.add(music7);
+
+        tunes.add(music8);
+
+        tunes.add(music9);
         
+        /*This is a menu for the user to interactive with. The user is able to add a new song, print the list of songs, 
+         * remove a song, and finally print a lift of songs over a given number of plays. */
         System.out.println("Menue:");
         System.out.println("1 = Print list of song");
         System.out.println("2 = Add a new song");
