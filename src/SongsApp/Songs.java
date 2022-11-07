@@ -19,4 +19,9 @@ public class Songs
         System.out.println("Artist: " + this.artist);
         System.out.println("Plays: " + this.plays);
     }
+
+    public int getPLays()
+    { 
+        return plays;
+    }
 }

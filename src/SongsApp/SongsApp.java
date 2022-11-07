@@ -79,31 +79,23 @@ public class SongsApp
                 obj.print();
             }
         }
-
-
         /*
-        tunes.add(music6);
+         * 
+         */
+        else if(name == 4)
+        {
+            int minimumPlays = InputReader.getInt("Please enter the minimum number of plays: ");
 
-        tunes.add(music7);
 
-        tunes.add(mustic8);
-        */
-
-
-        /* 
-        music0.addSong ("Wow", "Tion Wayne", 4483921);
-        music.addSong ("Sicko Mode", "Travis Scott", 2556875);
-        music.addSong ("Floss", "AJ Tracey", "4,865,234");
-        music.addSong ("War", "ArrDee", "2,345,622");
-        music.addSong ("Retail Therapy", "Central Cee", "6,224,734");
-        music.addSong ("Go", "Cat Burns", "3,333,222");
-        music.addSong ("La Nota", "Manuel Turizo", "4,234,765");
-        music.addSong ("Sidelines", "Lecrae", "1,643,775");
-        music.addSong ("Moscow Mule", "Bad Bunny", "5,763,231");
-        music.addSong ("Vagas", "Doja Cat", "2,343,986");
-        
-        System.out.println(music);
-        */
+            for(Songs obj : tunes)
+            {
+                if(minimumPlays < obj.getPLays())
+                {
+                    System.out.println(" ");
+                    obj.print();
+                }
+            }
+        }
     } 
 
 }
