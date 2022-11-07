@@ -79,9 +79,30 @@ public class SongsApp
                 obj.print();
             }
         }
-        /*
-         * 
-         */
+        else if(name == 3)
+        {
+            for(Songs obj : tunes)
+            {
+                System.out.println(" ");
+                obj.print();
+            }
+            String removedSongs = InputReader.getString("Please enter the name of the song you'd like to remove: ");
+
+            for(Songs obj : tunes)
+            {
+                if(removedSongs.equals(obj.getTitle()))
+                {
+                    tunes.remove(obj);
+                }
+
+                for(Songs song : tunes)
+                {
+                    System.out.println(" ");
+                    song.print();
+                }
+
+            }
+        }
         else if(name == 4)
         {
             int minimumPlays = InputReader.getInt("Please enter the minimum number of plays: ");

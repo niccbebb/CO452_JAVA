@@ -24,4 +24,9 @@ public class Songs
     { 
         return plays;
     }
+
+    public String getTitle()
+    {
+        return title;
+    }
 }
