@@ -1,5 +1,4 @@
 package SongsApp;
-
 import java.util.ArrayList;
 
 public class SongsApp 
@@ -48,7 +47,7 @@ public class SongsApp
 
         tunes.add(music5);
 
-        music5.print();
+        String name = InputReader.getString("Enter yo");
 
         for(Songs obj : tunes)
         {
